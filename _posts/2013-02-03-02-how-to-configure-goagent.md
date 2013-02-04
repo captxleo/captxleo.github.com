@@ -7,7 +7,7 @@ title: Ubuntu下安装配置goagent
 3.	上传服务端，在 server 目录下运行 `python uploader.zip`
 4.	安装 gevent
 
-	<pre class="pre-scrollable">
+	<pre class="prettyprint">
 	sudo apt-get install python-dev
 	sudo apt-get install curl
 	curl -L -O https://github.com/python-greenlet/greenlet/archive/0.4.0.tar.gz && tar xvzpf 0.4.0.tar.gz && cd greenlet-0.4.0 && sudo python setup.py install
