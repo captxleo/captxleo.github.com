@@ -7,12 +7,12 @@ title: Ubuntu下安装配置goagent
 3.	上传服务端，在 server 目录下运行 `python uploader.zip`
 4.	安装 gevent
 
-<pre style="overflow: auto;">
-sudo apt-get install python-dev
-sudo apt-get install curl
-curl -L -O https://github.com/python-greenlet/greenlet/archive/0.4.0.tar.gz && tar xvzpf 0.4.0.tar.gz && cd greenlet-0.4.0 && sudopython setup.py instal
-curl -L -O https://github.com/downloads/SiteSupport/gevent/gevent-1.0rc2.tar.gz && tar xvzpf gevent-1.0rc2.tar.gz && cd gevent-10rc2 && sudo python setup.py install 
-</pre>
+	<pre style="overflow: auto;">
+	sudo apt-get install python-dev
+	sudo apt-get install curl
+	curl -L -O https://github.com/python-greenlet/greenlet/archive/0.4.0.tar.gz && tar xvzpf 0.4.0.tar.gz && cd greenlet-0.4.0 && sudo python setup.py install
+	curl -L -O https://github.com/downloads/SiteSupport/gevent/gevent-1.0rc2.tar.gz && tar xvzpf gevent-1.0rc2.tar.gz && cd gevent-1.0rc2 && sudo python setup.py install 
+	</pre>
 	
 5.	上传完服务端并设置好 proxy.ini 之后，在终端直接运行 `python proxy.py` 即可
 	-	第一次运行时使用管理员权限，以便导入证书
